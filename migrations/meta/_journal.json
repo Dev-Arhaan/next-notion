@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1707464675742,
+      "tag": "0000_pretty_celestials",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1707468402653,
+      "tag": "0001_early_the_renegades",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1707474907439,
+      "tag": "0002_clean_meggan",
+      "breakpoints": true
+    }
+  ]
+}
