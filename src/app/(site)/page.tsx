@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image';
 import appBanner from '../../../public/appBanner.png';
 import { CLIENTS } from '@/lib/constants';
+import cal from '../../../public/cal.png';
 
 const HomePage = () => {
   return (
@@ -23,7 +24,7 @@ const HomePage = () => {
           title="All-In-One Collaboration and Productivity Platform"/>
           <div className="bg-white
           p-[2px]
-          mt-[6]
+          mt-6
           rounded-xl
           bg-gradient-to-r
           from-primary
@@ -44,7 +45,7 @@ const HomePage = () => {
           sm:w-full
           w-[750px]
           flex
-          justify center
+          justify-center
           items-center
           mt-[-40px]
           relative
@@ -68,22 +69,21 @@ const HomePage = () => {
           </div>
           </section>
         <section className='relative'>
-          <div className='overflow-hidden
+          <div className="overflow-hidden
           flex
-          after:content[""]
+          after:content['']
           after:dark:from-brand-dark
           after:to-transparent
           after:from-background
           after:bg-gradient-to-l
           after:right-0
-          after:top-0
           after:bottom-0
+          after:top-0
           after:w-20
-          absolute
           after:z-10
           after:absolute
 
-          before:content[""]
+          before:content['']
           before:dark:from-brand-dark
           before:to-transparent
           before:from-background
@@ -94,7 +94,7 @@ const HomePage = () => {
           before:w-20
           before:z-10
           before:absolute
-          '>
+        ">
             {[...Array(2)].map((arr) => <div 
             key={arr}
             className="flex
@@ -114,10 +114,82 @@ const HomePage = () => {
                 <Image src={client.logo}
                 alt={client.alt}
                 width={200}
-                className="object-contain max-w-none" />
-              </div> )}
-            </div> )}
+                className="object-contain max-w-none" 
+                />
+              </div> 
+              )}
+            </div> 
+            )}
           </div>
+        </section>
+
+        <section className="px-4
+        sm:px-6
+        flex
+        justify-center
+        items-center
+        flex-col
+        relative">
+
+          <div className="w-[30%]
+          blur-[120px]
+          rounded-full
+          h-32
+          absolute
+          bg-brand-primaryPurple/50
+          -z-10
+          top-22" />
+
+          <TitleSection title="Keep track of all your meetings in one place"
+          subheading='Capture your ideas, thoughts, and meeting notes in a structured and organized manner.'
+          pill='Features'/>
+
+          <div
+          className='mt-10
+          max-w-[450px]
+          flex
+          justify-center
+          items-center
+          relative
+          sm:ml-0
+          rounded-2xl
+          border-8
+          border-washed-purple-300
+          border-opacity-50'>
+            <Image 
+            src={cal}
+            alt='Banner'
+            className='rounded-2xl'
+            />
+          </div>  
+        </section>
+
+        <section className='relative'>
+        <div className="w-[30%]
+          blur-[120px]
+          rounded-full
+          h-32
+          absolute
+          bg-brand-primaryPurple/50
+          -z-10
+          top-22" />
+
+                <div className="mt-20
+                px-4
+                sm:px-6
+                flex
+                flex-col
+                overflow-x-hidden
+                overflow-visible
+                ">
+
+                </div>
+
+          <TitleSection title="Trusted by all"
+            subheading="Join thousands of satisfied users who rely on our platform for their 
+            personal and professional productivity needs."
+            pill="Testimonials"
+          />
         </section>
     
     
