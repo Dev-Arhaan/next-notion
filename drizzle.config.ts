@@ -1,6 +1,6 @@
 import type { Config } from 'drizzle-kit';
 import * as dotenv from 'dotenv';
-import { log } from 'console';
+
 dotenv.config({ path: '.env' });
 
 if(!process.env.DATABASE_URL) {
